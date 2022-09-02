@@ -15,5 +15,6 @@ if __name__ == '__main__':
     print_hi('명호')
     print_hi('지수~')
     print_hi('안뇽!')
+    print_hi('집에 가기 34분전!')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
