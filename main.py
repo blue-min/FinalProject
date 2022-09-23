@@ -12,7 +12,7 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('미리~1')
-    print_hi('명호')
+    print_hi('명호111')
     print_hi('지수~')
     print_hi('안뇽!')
     print_hi('집에 가기 34분전!')
