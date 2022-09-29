@@ -1,0 +1,21 @@
+.word{
+    display:inline-block;
+    outline:0;
+    border:0;
+    background-color:#ffffff;
+}
+
+.word:hover{
+    /*background-color:#EBC03B;*/
+    color:#EBC03B;
+}
+
+
+.container{
+    text-align:center;
+}
+
+#content_word{
+    padding:300px;
+}
+
