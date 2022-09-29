@@ -1,0 +1,117 @@
+
+     .controls_opt{
+        width: 300px;
+        height: 300px;
+        position: relative;
+    }
+
+    #c{
+        top: 0px;
+        left: 100px;
+        position: absolute;
+    }
+
+  .images.controls_opt{
+        float:right;
+
+    }
+
+    .img_svg{
+        width:50%;
+        margin:20px;
+    }
+
+    .container_svg{
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+   /* .svg_1, .svg_2, .svg_3{
+        padding-top:10px;
+        padding-bottom:10px;
+    }*/
+
+@media screen and (max-device-width: 320px){
+    #c {
+        width: 80vmin;
+        height: 80vmin;
+    }
+}
+*/
+/* 태블릿 세로 */
+
+@media screen and (min-width : 321px) and (max-width : 767px) and (orientation : portrait ) {
+    #c {
+        width: 90vmin;
+        height: 90vmin;
+    }
+}
+*/
+/* iPad Pro 세로 */
+
+@media screen and (min-width : 768px) and (orientation : portrait ) {
+    #c {
+        width: 900px;
+        height: 900px;
+    }
+}
+*/
+/* 스마트폰 가로 */
+
+@media screen and (max-width : 767px) and (orientation : landscape ) {
+    #c {
+        width: 70vmax;
+        height: 60vmin;
+    }
+}
+*/
+/* 태블릿 가로 */
+
+@media screen and (min-width : 768px) and (max-width : 1365px) and (orientation : landscape ) {
+    #c {
+        width: 90vmax;
+        height: 70vmin;
+    }
+}
+*/
+/* iPad Pro 가로, 데스크탑 */
+
+@media screen and (min-width : 1366px) and (max-width : 1599px) and (orientation : landscape ) {
+    #c {
+        width: 90vmax;
+        height: 80vmin;
+    }
+}
+*/
+/* 큰 모니터 16:9 */
+
+@media screen and (min-width : 1600px) {
+    #c {
+        width: 1600px;
+        height: 900px;
+    }
+}
+
+
+/*imgtool페이지 btn css*/
+#save_img:hover, #remove_img:hover, #draw_text:hover{
+    background-color:#EBC03B;
+    color:white;
+}
+
+#save_img, #remove_img, #draw_text{
+       font-weight:bold;
+}
+
+.tool_color{
+    padding:30px;
+}
+
+.tool_container{
+/*   font-family: 'Nanum Gothic', sans-serif;
+   font-family: 'Nanum Gothic Coding', monospace;
+   font-family: 'Sunflower', sans-serif;*/
+}
+
+
+

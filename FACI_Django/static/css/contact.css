@@ -1,0 +1,52 @@
+#pagination_container{
+    display:flex;
+    justify-content:center;
+}
+
+#write{
+    border:0;
+    outline:0;
+    float:right;
+    background-color:black;
+    color:white;
+  /*  display:inline-block;*/
+
+}
+
+/*#write:hover{
+    background-color:black;
+    color:white;
+}*/
+.notice_container{
+ /*   display:flex;*/
+    /*justify-content:space-between;*/
+    flex-wrap:wrap;
+ /*   justify-content:space-evenly;*/
+}
+#search_container{
+    width:300px;
+    height:50px;
+    /*justify-content:flex-end;*/
+    float:right;
+   /*   width:300px;
+      height:80px;
+      display:inline-block;*/
+     /* display:flex;*/
+
+}
+
+/*
+#pagination{
+    background-color:black;
+}*/
+
+#h2_title{
+    /*align-self:flex-end;*/
+    /*justify-content:center;*/
+    display:inline-block;
+/*   justify-content: center;*/
+}
+/*
+#notice_container{
+    display:flex;
+}*/
