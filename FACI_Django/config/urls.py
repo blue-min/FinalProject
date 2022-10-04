@@ -17,16 +17,16 @@ from django.contrib import admin
 from django.urls import path
 
 # 뷰 추가시 임포트 해주기
-from .views import index, goHome, guide, example, logo_making, contact, color, result, edit, imgtool, write, contactpage
+from .views import index, goHome, guide, example, logo_making, contact, color, result, edit, imgtool, write, message
 
 urlpatterns = [
 
     # path('주소', 뷰, 주소의 별명)
     path('admin/', admin.site.urls),
+    path('message/', message),
     path('guide/', guide),
     path('example/', example),
     path('logo_making/', logo_making),
-    path('contactpage/', contactpage),
     path('contact/', contact),
     path('color/', color),
     path('result/', result),

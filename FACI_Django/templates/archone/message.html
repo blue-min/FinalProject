@@ -15,10 +15,8 @@
     <meta name="keywords"
           content="interior design, furniture, exterior furniture, furniture company, bootstrap interior design website templates, interior design & furniture website templates">
     <title>Interior Design Website Templates Free Download</title>
-     <!-- fontawesome css-->
-    <script src="https://kit.fontawesome.com/f548a327d3.js" crossorigin="anonymous"></script>
-    <!-- contact페이지 css -->
-    <link href="{% static 'css/contact.css'%}" rel="stylesheet">
+    <!-- write 페이지 css -->
+    <link href="{% static 'css/write.css'%}" rel="stylesheet">
     <!-- Bootstrap -->
     <!-- href="{% static 'css/style.css'%}" -->
     <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
@@ -93,8 +91,165 @@
 <div class="content">
     <div class="container">
         <div class="row">
+            <article class="posts-page">
+                <h2>문의 게시판</h2>
+
+                <div class="clear"></div>
+                <div class="mb-tablet">
+                    <div id="quest_board" class="mb-board">
+                        <script type="text/javascript">
+
+function resizeResponsive(){var nWidth		= jQuery(window).width();if(nWidth>=1200){jQuery(".mb-desktop").removeClass("mb-desktop").addClass("mb-desktop-large");jQuery(".mb-tablet").removeClass("mb-tablet").addClass("mb-desktop-large");jQuery(".mb-mobile").removeClass("mb-mobile").addClass("mb-desktop-large");}else if(nWidth>=992){jQuery(".mb-desktop-large").removeClass("mb-desktop-large").addClass("mb-desktop");jQuery(".mb-tablet").removeClass("mb-tablet").addClass("mb-desktop");jQuery(".mb-mobile").removeClass("mb-mobile").addClass("mb-desktop");}else if(nWidth>=768){jQuery(".mb-desktop-large").removeClass("mb-desktop-large").addClass("mb-tablet");jQuery(".mb-desktop").removeClass("mb-desktop").addClass("mb-tablet");jQuery(".mb-mobile").removeClass("mb-mobile").addClass("mb-tablet");}else if(nWidth<768){jQuery(".mb-desktop-large").removeClass("mb-desktop-large").addClass("mb-mobile");jQuery(".mb-desktop").removeClass("mb-desktop").addClass("mb-mobile");jQuery(".mb-tablet").removeClass("mb-tablet").addClass("mb-mobile");}}jQuery(window).resize(resizeResponsive);resizeResponsive();var category_text				= '';mb_categorys["value1"]	= "";mb_categorys["value2"]	= "";mb_categorys["value3"]	= "";mb_urls["base"]						= "http://ktstore.org/wp-content/plugins/mangboard/";mb_urls["image"]						= "http://ktstore.org/wp-content/plugins/mangboard/includes/mb-file.php";mb_urls["file"]							= "http://ktstore.org/wp-content/plugins/mangboard/includes/mb-file.php";mb_urls["search"]						= "http://ktstore.org/%eb%ac%b8%ec%9d%98-%ea%b2%8c%ec%8b%9c%ed%8c%90?mode=list";mb_options["device_type"]		= "desktop";mb_options["mode"]				= "view";mb_options["board_action"]				= "";mb_options["board_name"]		= "quest";mb_options["board_type"]			= "board";mb_options["table_prefix"]			= "mb_quest_";mb_options["pid"]					= "232";mb_options["nonce"]				= "mb_nonce_value=d3b3d30d09a2f05703ce959dca00326f&mb_nonce_time=1664879489";mb_options["list_type"]				= "list";mb_options["search_field"]		= "fn_title";mb_options["search_text"]			= "";mb_languages["selectbox1"]		= "전체";mb_languages["selectbox2"]		= "전체";mb_languages["selectbox3"]		= "전체";
+var category_data				= "";
+try {
+	if(isJsonType(category_text)){
+		category_data			= JSON.parse(category_text);
+	}
+}catch(e) {}
 
 
+
+
+                        </script>
+                        <script type="text/javascript">
+
+var view_action			= "";
+function showBoardViewDeleteConfirm(data){
+	showConfirmPopup("삭제하시겠습니까?<br>비밀번호를 입력해 주세요", data, sendBoardViewDeleteData);
+}
+function sendBoardViewDeleteData(){
+	sendBoardViewData("delete");
+}
+
+function sendBoardViewData(action){
+	view_action			= action;
+	var data				= "mode=view&board_action="+action+"&board_name="+mb_options["board_name"]+"&board_pid="+mb_options["pid"];
+	if(action=="delete") data		= data+"&passwd="+jQuery("#mb_confirm_passwd").val();
+	else if(action.indexOf('modify')==0) data		= data+"&"+jQuery('#'+mb_options["board_name"]+'_form_board_view').serialize();
+	sendDataRequest(mb_urls["board_api"], data, sendBoardViewDataHandler);
+}
+
+function sendBoardViewDataHandler(response, state)
+{
+	if(response && response.state == "success"){
+		if(view_action=="delete"){
+			moveURL("http://ktstore.org/%eb%ac%b8%ec%9d%98-%ea%b2%8c%ec%8b%9c%ed%8c%90?board_name=quest&mode=list&search_field=fn_title&order_by=fn_pid&order_type=desc&board_page=1&list_type=list");
+		}else if(view_action=="vote_good"){
+			jQuery("#"+mb_options["board_name"]+"_vote_good").html("("+response.count+")");
+		}else if(view_action=="vote_bad"){
+			jQuery("#"+mb_options["board_name"]+"_vote_bad").html("("+response.count+")");
+		}else if(view_action.indexOf('modify')==0){
+			moveURL("reload");
+		}
+	}else{
+		showAlertPopup(response);
+	}
+}
+
+
+                        </script>
+
+                        <div class="mb-style1 board-view">
+                            <form name="quest_form_board_view" id="quest_form_board_view" method="post">
+                                <input type="hidden" name="mb_nonce_value"
+                                       value="d3b3d30d09a2f05703ce959dca00326f"><input type="hidden"
+                                                                                       name="mb_nonce_time"
+                                                                                       value="1664879489">
+                                <div class="main-style1" id="quest_board_box">
+                                    <table cellspacing="0" cellpadding="0" border="0" id="" class="table table-view">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:20%">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                        <tr id="mb_quest_tr_title">
+                                            <th scope="row"><span>제목</span></th>
+                                            <td><span style="float:left;">비용문의</span><span
+                                                    style="float:right;width:155px;text-align:right;">2020-08-21 11:06:03</span>
+                                            </td>
+                                        </tr>
+                                        <tr id="mb_quest_tr_user_name">
+                                            <th scope="row"><span>작성자</span></th>
+                                            <td><span><span class="btn-user-info"
+                                                            title="kt인터네설치비문의"><span>강미리</span></span></span>
+                                            </td>
+                                        </tr>
+
+                                        <tr id="mb_quest_tr_content" class="qna">
+                                            <td class="content-box text-center" colspan="2" style="padding:50px" ;>
+                                                <p><span
+                                                        style="line-height:1.6;font-size:10pt;">며칠전에 상담을 받았는데 한가지 더 물어볼려 합니다</span>
+                                                </p>
+                                                <p><span style="line-height:1.6;font-size:10pt;">전에는 설치비가 무료였던거 같은데 설치비가 3년약정해도 나오나요?</span>
+                                                </p>
+                                                <p><span style="line-height:1.6;font-size:10pt;">kt인터넷+tv하면 설치비가 정확하게 얼마나오죠?<br></span>
+                                                </p></td>
+                                        </tr>
+
+
+                                        <tr id="mb_quest_tr_tag" style=";display:none;">
+                                            <th scope="row"><span>태그</span></th>
+                                            <td><span></span></td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                 <hr>
+
+
+                                <div class="view-btn">
+                                    <div class="btn-box-right" id="quest_btn_box">
+                                        <div class="btn-box-left" style="float:left;"></div>
+                                        <!-- <button onclick="movePage('http://ktstore.org/%eb%ac%b8%ec%9d%98-%ea%b2%8c%ec%8b%9c%ed%8c%90?board_name=quest&amp;mode=list&amp;search_field=fn_title&amp;order_by=fn_pid&amp;order_type=desc&amp;board_page=1&amp;list_type=list');return false;"
+                                                 class="btn btn-default btn-list" title="목록" type="button">
+                                             <span>목록</span></button>-->
+                                        <button onclick="movePage('http://ktstore.org/%eb%ac%b8%ec%9d%98-%ea%b2%8c%ec%8b%9c%ed%8c%90?board_name=quest&amp;mode=write&amp;board_pid=232&amp;search_field=fn_title&amp;order_by=fn_pid&amp;order_type=desc&amp;board_page=1&amp;list_type=list&amp;board_action=modify');return false;"
+                                                class="btn btn-default btn-modify" title="수정" type="button">
+                                            <span>수정</span></button>
+                                        <button onclick="showBoardViewDeleteConfirm({'type':'passwd'});return false;"
+                                                class="btn btn-default btn-delete" title="삭제" type="button">
+                                            <span>삭제</span></button>
+                                        <!--  <button onclick="movePage('http://ktstore.org/%eb%ac%b8%ec%9d%98-%ea%b2%8c%ec%8b%9c%ed%8c%90?board_name=quest&amp;mode=write&amp;board_pid=232&amp;search_field=fn_title&amp;order_by=fn_pid&amp;order_type=desc&amp;board_page=1&amp;list_type=list&amp;board_gid=232&amp;board_action=reply');return false;"
+                                                  class="btn btn-default btn-reply" title="답변" type="button">
+                                              <span>답변</span></button>
+                                          <button onclick="movePage('http://ktstore.org/%eb%ac%b8%ec%9d%98-%ea%b2%8c%ec%8b%9c%ed%8c%90?board_name=quest&amp;mode=write&amp;search_field=fn_title&amp;order_by=fn_pid&amp;order_type=desc&amp;board_page=1&amp;list_type=list&amp;board_action=write');return false;"
+                                                  class="btn btn-default btn-write" title="글쓰기" type="button">
+                                              <span>글쓰기</span></button>-->
+                                    </div>
+                                </div>
+                            </form>
+
+
+                            <div class="cmt-style1">
+                                <fieldset>
+                                    <div style="width:100%;min-height:32px;">
+                                        <p class="cmt-count-box bold" style="display:none;">
+                                            댓글<span class="cmt-count"> [<span class="cmt-count-num"
+                                                                              id="mb_comment_totalcount">0</span>]</span>
+                                        </p>
+                                    </div>
+
+
+                                    <ul id="comment_list_box" class="cmt-list-box list-unstyled"
+                                        style="display:none;"></ul>
+                                </fieldset>
+                            </div>
+                            <div id="comment_add_list" class="cmt-add-list" style="display:none;">
+                                <button onclick="sendCommentList();return false;" class="btn btn-default btn-more"
+                                        title="더보기" type="button">
+                                    <span>더보기</span></button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
     </div>
 
 
@@ -104,7 +259,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
                             class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                    <h4 class="modal-title custom_align" id="Heading1">Edit Your Detail</h4>
+                    <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
@@ -139,7 +294,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
                             class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                    <h4 class="modal-title custom_align" id="Heading2">Delete this entry</h4>
+                    <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
                 </div>
                 <div class="modal-body">
 
