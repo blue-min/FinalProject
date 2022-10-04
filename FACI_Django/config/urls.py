@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 # 뷰 추가시 임포트 해주기
-from .views import index, goHome, guide, example, logo_making, contact, color, result, edit, imgtool, write, test
+from .views import index, goHome, guide, example, logo_making, contact, color, result, edit, imgtool, write, contactpage
 
 urlpatterns = [
 
@@ -26,6 +26,7 @@ urlpatterns = [
     path('guide/', guide),
     path('example/', example),
     path('logo_making/', logo_making),
+    path('contactpage/', contactpage),
     path('contact/', contact),
     path('color/', color),
     path('result/', result),
@@ -33,6 +34,5 @@ urlpatterns = [
     path('home/', goHome),
     path('imgtool/', imgtool),
     path('write/', write),
-    path('test/', test),
     path('', goHome), #위에서 매칭된 뷰가 없을 경우 이쪽으로 연결되기 때문에 맨 아래에 위치하는것이 좋음
 ]

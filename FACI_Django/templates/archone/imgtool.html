@@ -163,7 +163,6 @@
                         <!-- 텍스트 입력 : <input id="draw_text" value="Hello World."> -->
                         <button id="draw_text" style="background-color:black; color:white;">텍스트 추가</button>
                         <button id="remove_img" style="background-color:black; color:white;">삭제하기</button>
-                        <button id="craser" style="background-color:black; color:white;">지우기</button>
                         <button id="save_img" style="background-color:black; color:white;">저장하기</button>
 
                     </p>
@@ -330,15 +329,15 @@
                               canvas.add(oImg);
                             });
 
-                            fabric.Image.fromURL("{% static 'images/white2.svg' %}", function (img) {
-                              var oImg = img.set({ left: 150, top: 0 }).scale(0.4);
-                              canvas.add(oImg);
-                            });
+                            //fabric.Image.fromURL("{% static 'images/white2.svg' %}", function (img) {
+                             // var oImg = img.set({ left: 150, top: 0 }).scale(0.4);
+                            //  canvas.add(oImg);
+                           // });
 
-                            fabric.Image.fromURL("{% static 'images/white3.svg' %}", function (img) {
-                              var oImg = img.set({ left: 150, top: 0 }).scale(0.4);
-                              canvas.add(oImg);
-                            });
+                           // fabric.Image.fromURL("{% static 'images/white3.svg' %}", function (img) {
+                           //   var oImg = img.set({ left: 150, top: 0 }).scale(0.4);
+                           //   canvas.add(oImg);
+                           // });
 
 
 
@@ -433,16 +432,6 @@
                           });
                           canvas.add(imgInstance);
 
-                            <!-- 지우기 버튼 함수 -->
-                            const rangeInput = document.querySelector("#rangeInput");
-
-                            // rangeInput
-                            rangeInput.min = 1;
-                            rangeInput.max = 20;
-                            rangeInput.step = 1;
-                            rangeInput.value = 5;
-
-                            rangeInput.addEventListener("change", e => ctx.lineWidth = e.target.value);
 
 
 

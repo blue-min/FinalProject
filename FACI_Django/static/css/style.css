@@ -60,10 +60,10 @@ Author:             Jitu Chauhan
     1. Body / Typography 
 -----------------------------------*/
 
-body { font-size: 16px; background-color: #fff; color: #464241; font-family: 'Raleway', sans-serif; line-height: 28px; font-weight: 300; }
+body { font-size: 16px; background-color: #fff; color: #464241; font-family: 'NanumGothic', sans-serif; line-height: 28px; font-weight: 300; }
 h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; margin-bottom: 10px; color: #383433; font-weight: 400; text-transform: uppercase; font-family: 'Raleway', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-h1 { font-size: 32px; line-height: 42px; }
-h2 { font-size: 24px; line-height: 32px; }
+h1 { font-size: 32px; line-height: 42px; width: 800px;}
+h2 { font-size: 24px; line-height: 32px; width: 800px;}
 h3 { font-size: 18px; line-height: 28px; }
 h4 { font-size: 16px; line-height: 24px; margin-bottom: 10px; }
 h5 { font-size: 14px; }
@@ -72,9 +72,9 @@ p { margin: 0 0 20px; }
 p:last-child { margin-bottom: 0px; }
 ul, ol { margin: 0; }
 ul li, ol li { }
-a { color: black; text-decoration: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a { color: #aa9144; text-decoration: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 a:focus, a:hover { text-decoration: none; color: #e7a625; }
-b, strong { font-weight: 600; }
+b, strong { font-weight: 600; font-family: NanumGothic;}
 .listnone { list-style: none; padding: 0px; }
 .lead { font-size: 21px; color: #3c3c3c; font-weight: 400; }
 .italic { font-style: italic; }
@@ -123,7 +123,7 @@ label { }
 /*-----------------------------------
     3. Buttons 
 -----------------------------------*/
-.btn { display: inline-block; padding: 14px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; text-transform: uppercase; border-radius: 40px; font-family: 'Raleway', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.btn { display: inline-block; padding: 14px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; text-transform: uppercase; border-radius: 30px; font-family: 'Raleway', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 .btn-default { color: #fff; background-color: #372d2b; }
 .btn-default:hover { color: #fff; background-color: #e7a625; border-color: #e7a625; }
 .btn-default.focus, .btn-default:focus { color: #fff; background-color: #e7a625; border-color: #e7a625; }
@@ -139,6 +139,20 @@ label { }
 .btn-sm { font-size: 12px; padding: 5px 10px; }
 .btn-xs { font-size: 12px; padding: 5px 7px; }
 
+
+input[type=file]::file-selector-button {
+  width: 150px;
+  height: 30px;
+  background: #EBC03B;
+  border: 1px solid #EBC03B;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background: rgb(77,77,77);
+    color: #fff;
+  }
+}
+
 /*-----------------------------------
     4. General / Elements 
 -----------------------------------*/
@@ -151,10 +165,10 @@ label { }
 
 .content { }
 .space-small { padding-top: 40px; padding-bottom: 40px; }
-.space-medium { padding-top: 100px; padding-bottom: 100px; }
+.space-medium { padding-top: 100px; padding-bottom: 100px;}
+#space-medium { padding-top: 0px; padding-bottom: 0px;}
 .space-large { padding-top: 120px; padding-bottom: 120px; }
-.space-ex-large { padding-top: 140px; padding-bottom: 140px; }
-
+.space-ex-large { padding-top: 140px; padding-bottom: 140px;}
 /*----------------------
    4.2 Margin Space
 -----------------------*/
@@ -225,7 +239,8 @@ label { }
 /*--------------------------------
 4.4 Background & Block color 
 ----------------------------------*/
-.bg-light { background-color: #f8f6f2; }
+.bg-light { background-color: #f5f5f5; }
+#bg-light { background-color: #f5f5f5; }
 .bg-primary { }
 .bg-default { }
 .bg-white { background-color: #fff; }
@@ -335,7 +350,7 @@ url(../images/cta-section-img.jpg) no-repeat center; background-size: cover; }
 /*--------------------------
     5.2 Navigations Regular
    ----------------------------*/
-.hero-section { padding-top: 250px; padding-bottom: 215px; background: linear-gradient(rgba(34, 27, 25, 0.5), rgba(34, 27, 25, 0.5)), rgba(34, 27, 25, 0.5) url(../images/hero-img.jpg) no-repeat center; background-size: cover; position: relative; top: 0px; }
+.hero-section { padding-top: 250px; padding-bottom: 215px; background:  url(../images/main_img2.jpg) no-repeat center; background-size: cover; position: relative; top: 0px; }
 .hero-caption { padding-top: 100px; padding-bottom: 100px; }
 .hero-title { font-size: 46px; color: #fff; line-height: 58px; margin-bottom: 30px; letter-spacing: -1px; }
 .hero-text { }
@@ -350,7 +365,7 @@ url(../images/cta-section-img.jpg) no-repeat center; background-size: cover; }
 #navigation.align-center > ul > li { display: inline-block; float: none; }
 #navigation.align-center ul ul { text-align: left; }
 #navigation.align-right > ul > li { float: right; }
-#navigation > ul > li > a { padding: 15px; font-size: 13px; color: #fff; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+#navigation > ul > li > a { padding: 15px; font-size: 20px; color: white; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
 #navigation > ul > li:hover > a { color: #ffffff; background-color: #e7a625; }
 #navigation > ul > li.has-sub > a { padding-right: 32px; }
 
@@ -418,7 +433,7 @@ url(../images/cta-section-img.jpg) no-repeat center; background-size: cover; }
 /*----------------------------------------------
     5.4 Page Header
 ----------------------------------------------*/
-.page-header { background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/main1.jpg) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom: 0px; }
+.page-header { background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/page-header.jpg) no-repeat center; background-size: cover; margin: 0; border-bottom: none; padding-bottom: 0px; }
 .page-caption { padding: 180px 0px 120px 0; position: relative; z-index: 1; color: #fff; text-align: center; }
 .page-title { color: #fff; font-size: 40px; font-weight: 400; margin-bottom: 20px; }
 .breadcrumb { }
@@ -433,9 +448,6 @@ url(../images/cta-section-img.jpg) no-repeat center; background-size: cover; }
 /*-----------------------------------
 7. Content 
 -------------------------------------*/
-#content_word{
-    padding:100px;
-}
 
 .content { padding-top: 100px; padding-bottom: 100px; }
 
@@ -645,7 +657,7 @@ address { margin-bottom: 20px; font-style: normal; line-height: 1.42857143; }
 .st-pagination .pagination>.active>a, .st-pagination .pagination>.active>a:focus, .st-pagination .pagination>.active>a:hover, .st-pagination .pagination>.active>span, .st-pagination .pagination>.active>span:focus, .st-pagination .pagination>.active>span:hover { z-index: 3; color: #fff; cursor: default; background-color: #372d2b; border: 1px solid #372d2b; }
 
 /*----- Project -----*/
-.project-img { }
+.project-img {}
 .project-info { }
 .project-title { font-size: 12px; }
 .project-content { font-weight: 600; }
@@ -705,6 +717,7 @@ ul.widget-recent-post { }
 .team-name { }
 .team-meta { }
 .team-designation { }
+
 
 /*----- Comment Post -----*/
 .comments-area { border-bottom: 1px solid #f6f4f4; }
@@ -840,4 +853,3 @@ opacity: .5; }
     .childern { padding-left: 0px; list-style: none; }
     .error-title { font-size: 42px; margin-bottom: 10px; font-weight: 800; }
     .testimonial-content { font-weight: 400; padding-left: 0px; }
-

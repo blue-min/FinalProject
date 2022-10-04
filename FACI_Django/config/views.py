@@ -56,9 +56,9 @@ list = ['사랑스러운', '정열적인', '클래식한', '몽환적인',
             '편안한', '시크한', '지적인', '싱그러운', '밝은', '청량한', '단정한', '화려한',
             '깨끗한', '고급스러운', '강렬한', '명량한']
 
-def test(request):
+def contactpage(request):
 
-    return render(request, 'archone/test.html')
+    return render(request, 'archone/contactpage.html')
 
 def write(request):
 
