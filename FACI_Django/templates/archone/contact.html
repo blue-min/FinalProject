@@ -41,8 +41,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <a href="/home"><img src="/static/images/logo.png"
+                <div id="logo_container">
+                <a href="/home">
+                    <img src="{% static 'images/mainlogo.png' %}" id="mainlogo"
                                      alt="Interior Design Website Templates Free Download"></a>
+                </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="navigation">
@@ -94,21 +97,21 @@
     <div class="container">
         <div class="row">
             <div class="notice_container">
-                 <h2 id="h2_title" style="text-align: right;">문의 게시판</h2>
-                <div id="search_container">
+                 <h2 id="h2_title" >문의 게시판</h2>
+                        </div>
+             <div id="search_container">
                   <form action="#" method="get" >
                             <div class="input-group" id="input-group">
                                 <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
                                 <input class="form-control" id="system-search" name="q" placeholder="Search for"
                                        required>
-                                <span class="input-group-btn">
+                                <span class="input-group-btn" >
                         <button type="submit" class="btn btn-default"><i
                                 class="glyphicon glyphicon-search"></i></button>
                     </span>
                             </div>
                         </form>
             </div>
-                        </div>
              <div class="col-md-12">
                 <div class="table-responsive">
                     <table id="mytable" class="table table-bordred table-striped">
@@ -128,10 +131,10 @@
 
                         <tr>
                             <!--  <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>공지</td>
+                            <td></td>
                             <td></td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message">많이 묻는 질문</a></td>
+                            <td><a href="/message" class="contact_title">많이 묻는 질문</a></td>
 
                             <!--&lt;!&ndash; <td>+923335586757</td>&ndash;&gt;
                              <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
@@ -142,7 +145,7 @@
                             <td>Number</td>
                             <td>Name</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
                             <!-- <td>+923335586757</td>-->
                             <!--  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                               <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -151,10 +154,10 @@
 
                         <tr>
                             <!--   <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>답변</td>
+                            <td></td>
                             <td></td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/화살표.png'%}" style="width:12px; height:12px;"> <img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 답변</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/화살표.png'%}" style="width:12px; height:12px;"> <img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 답변</a></td>
                             <!-- <td>+923335586757</td>-->
                             <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                                 <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -166,7 +169,7 @@
                             <td>Number</td>
                             <td>Name</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
                             <!--<td>+923335586757</td>-->
                             <!-- <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                              <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -178,7 +181,7 @@
                             <td>Number</td>
                             <td>Name</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
                             <!--<td>+923335586757</td>-->
                             <!--<td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                             <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -189,7 +192,7 @@
                             <td>Number</td>
                             <td>Name</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
                             <!-- <td>+923335586757</td>-->
                             <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                                 <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -200,7 +203,7 @@
                             <td>Number</td>
                             <td>Name</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
                             <!-- <td>+923335586757</td>-->
                             <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                                 <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -211,7 +214,7 @@
                             <td>Number</td>
                             <td>Name</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
                             <!-- <td>+923335586757</td>-->
                             <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                                 <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -222,7 +225,7 @@
                             <td>Number</td>
                             <td>Name</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
                             <!-- <td>+923335586757</td>-->
                             <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                                 <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -233,7 +236,7 @@
                             <td>Number</td>
                             <td>Name</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
                             <!-- <td>+923335586757</td>-->
                             <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                                 <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -244,7 +247,7 @@
                             <td>Number</td>
                             <td>Name</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
                             <!-- <td>+923335586757</td>-->
                             <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                                 <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
@@ -332,7 +335,7 @@
                 <div class="modal-footer ">
                     <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span> Yes
                     </button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span
+                    <button type="button" class="btn btn-default" id="btn_search" data-dismiss="modal"><span
                             class="glyphicon glyphicon-remove"></span> No
                     </button>
                 </div>
@@ -341,84 +344,6 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
-
-    <!--      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-              <div class="bg-light pinside30">
-                  <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <h1>Get in touch with us</h1>
-                          <p>Please complete the form below. We'll do everything we can to respond to you as quickly as possible.</p>
-                          <form>
-                              <div class="row">
-                                  <div class="col-md-6">
-                                      <div class="form-group has-feedback">
-                                          <label class="control-label" for="name">name</label>
-                                          <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                              <input type="text" class="form-control" id="name">
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <div class="form-group has-feedback">
-                                          <label class="control-label" for="email">email</label>
-                                          <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                              <input type="text" class="form-control" id="email">
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <div class="form-group has-feedback">
-                                          <label class="control-label" for="subject">Subject</label>
-                                          <div class="input-group"> <span class="input-group-addon"><i class="fa fa-globe"></i></span>
-                                              <input type="text" class="form-control" id="subject">
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <div class="form-group has-feedback">
-                                          <label class="control-label" for="phone">Phone</label>
-                                          <div class="input-group"> <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                                              <input type="text" class="form-control" id="phone">
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                      <div class="form-group">
-                                          <label class="control-label" for="textarea">Message</label>
-                                          <textarea class="form-control" id="textarea" name="textarea" rows="6" placeholder=""></textarea>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-12">
-                                      <div class="form-group">
-                                          <button id="singlebutton" name="singlebutton" class="btn btn-default">send message</button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>-->
-    <!-- <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-         <div class="contact-pic mb30"> <img src="/static/images/contact-pic.jpg" class="img-responsive" alt=""> </div>
-         <div class="contact-info">
-             <h2>archone interior- exterior design</h2>
-             <address>
-                 1309 Roosevelt Wilson Lane
-                 <br> Colton, CA 92324
-             </address>
-             <address>
-                 <span class="text-caps">studio:</span> <strong>180-751-3956</strong>
-                 <br>
-                 <span class="text-caps">Mobile:</span> <strong>180-752-3957</strong>
-             </address>
-             <address>
-                 <span class="text-caps">e-mail:</span> <strong>info@yourwebsitedomain.com</strong>
-             </address>
-             <div class="social-circle"> <span class="text-caps">Be social: </span> <a href="#"><i class="fa fa-facebook-square"></i></a> <a href="#"><i class="fa fa-twitter-square"></i></a> <a href="#"><i class="fa fa-google-plus-square"></i></a> <a href="#"><i class="fa fa-youtube-square"></i></a> <a href="#"><i class="fa fa-pinterest-square"></i></a> </div>
-         </div>
-         &lt;!&ndash; /.widget search &ndash;&gt;
-     </div>-->
 </div>
 </div>
 </div>
@@ -428,57 +353,57 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-widget">
-                    <h3 class="widget-title">About us</h3>
-                    <p>Phasellus hendrerit mauris vitae odio suscip pimus donec consequat cursus viverra varius natoque
-                        penatibus magnis dis parturient.</p>
+                    <h3 class="widget-title">코딩 지니어스 FACI팀</h3>
+                    <p>FACI 얼굴마담 팀장 정 민 <br> 스인개 유아 강미리 <br> 미키 박광희 <br> 깜찍 그 잡채 박지수 <br> 쓰레기차 랏소 베어 양명호</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-widget">
                     <!-- social block -->
-                    <h3 class="widget-title">Our Address</h3>
-                    <p>1309 Roosevelt Wilson Lane
-                        <br> Colton, CA 92324</p>
+                    <h3 class="widget-title">스마트인재개발원</h3>
+                    <p>인공지능 융합서비스 개발자과정
+                        <br>실전융합프로젝트</p>
                 </div>
                 <!-- /.social block -->
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="footer-widget">
                     <!-- newsletter block -->
-                    <h3 class="widget-title">e-mail Us</h3>
-                    <p>info@yourwebsitedomain.com</p>
+                    <h3 class="widget-title">문제사항 있을시</h3>
+                    <p>ilb0919497@gmail.com <br> 미닝이 이메일로 연락주세요</p>
                 </div>
                 <!-- newsletter block -->
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="footer-widget">
                     <!-- newsletter block -->
-                    <h3 class="widget-title">Call us</h3>
-                    <p>180-874-5234</p>
-                    <p>180-752-3957</p>
+                    <h3 class="widget-title">도움을 주신 분들</h3>
+                    <p>담임 : 최태양 선생님 <br>
+                    부담임 : 조자연 선생님</p>
                 </div>
                 <!-- newsletter block -->
             </div>
         </div>
     </div>
 </div>
+<!-- /.footer-->
 <div class="tiny-footer">
     <!-- tiny footer block -->
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <div class="copyright-content">
-                    Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
+                   마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/">스마트인재개발원</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
                 <div class="footer-social">
                     <ul class="listnone">
-                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-facebook-square"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-twitter-square"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-google-plus-square"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-youtube-square"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-pinterest-square"></i></a> </li>
                     </ul>
                 </div>
             </div>

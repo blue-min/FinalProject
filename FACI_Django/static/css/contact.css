@@ -4,13 +4,21 @@
 }
 
 #write{
+    border-radius: 10px;
     border:0;
     outline:0;
     float:right;
-    background-color:black;
+    background-color:#372d2b;
     color:white;
+    padding-left:10px;
+    padding-right:10px;
   /*  display:inline-block;*/
 
+}
+
+#write:hover{
+    background-color:#EBC03B;
+    color:white;
 }
 
 /*#write:hover{
@@ -50,3 +58,23 @@
 #notice_container{
     display:flex;
 }*/
+
+#btn_search:hover{
+    background-color:#EBC03B;
+}
+
+.contact_title{
+    color:black;
+}
+
+#mainlogo{
+    width:190px;
+    height:50px;
+    position: absolute;
+    right:147%;
+}
+
+.notice_container{
+    display:flex;
+    justify-content:space-around;
+}
