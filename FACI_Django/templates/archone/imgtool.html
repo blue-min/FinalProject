@@ -247,6 +247,7 @@
                     </div>
                 </div>
         </div>
+        <input type="hidden" id="img_url" value="{{img_url}}">
 
             <script>
 
@@ -323,9 +324,9 @@
                               }
                             });
 
-
-                            fabric.Image.fromURL("{% static 'images/white.svg' %}", function (img) {
-                              var oImg = img.set({ left: 150, top: 0 }).scale(0.4);
+                            const img_url = document.getElementById('img_url').value;
+                            fabric.Image.fromURL(img_url, function (img) {
+                              var oImg = img.set({ left: 180, top: 120 }).scale(1);
                               canvas.add(oImg);
                             });
 

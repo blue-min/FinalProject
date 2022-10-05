@@ -54,7 +54,7 @@ list = ['사랑스러운', '정열적인', '클래식한', '몽환적인',
             '깨끗한', '고급스러운', '강렬한', '명량한']
 
 check = False
-img_url = 'capture2.svg'
+img_url = 'capture2'
 color = ''
 choice = ''
 
@@ -107,5 +107,5 @@ def color(request):
 
 def imgtool(request):
 
-    return render(request, 'archone/imgtool.html')
+    return render(request, 'archone/imgtool.html',{'img_url' : img_url})
 

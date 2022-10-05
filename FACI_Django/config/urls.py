@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import path, include
 
-import Pages.ResultPage.views
 from Pages.homePage import views as homeViews
 from Pages.EditPage import views as editViews
 from Pages.GuidePage import views as guideViews
