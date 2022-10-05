@@ -33,6 +33,7 @@ urlpatterns = [
     # path('주소', 뷰, 주소의 별명)
     path('admin/', admin.site.urls),
     path('guide/', guideViews.index, name="guide"),
+    path('lock/', contactViews.lock, name="lock"),
     path('example/', examplePageViews.index, name="example"),
     path('logo_making/', logo_makingViews.index, name="logo_making"),
     path('contact/', contactViews.index, name="contact"),

@@ -78,3 +78,11 @@
     display:flex;
     justify-content:space-around;
 }
+
+#a_smhrd{
+   color:#EBC03B;
+}
+
+#a_smhrd:hover{
+   color:#aa9144;
+}
