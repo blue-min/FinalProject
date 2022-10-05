@@ -7,3 +7,11 @@ def index(request):
 def lock(request):
 
     return render(request, 'archone/lock.html')
+
+def write(request):
+
+    return render(request, 'archone/write.html')
+
+def message(request):
+
+    return render(request, 'archone/message.html')
