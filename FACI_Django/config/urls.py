@@ -15,24 +15,34 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import path, include
 
-# 뷰 추가시 임포트 해주기
-from .views import index, goHome, guide, example, logo_making, contact, color, result, edit, imgtool, write, message
+import Pages.ResultPage.views
+from Pages.homePage import views as homeViews
+from Pages.EditPage import views as editViews
+from Pages.GuidePage import views as guideViews
+from Pages.ContactPage import views as contactViews
+from Pages.logo_makingPage import views as logo_makingViews
+from Pages.examplePage import views as examplePageViews
+from Pages.ResultPage import views as resultPageViews
+
+
 
 urlpatterns = [
 
     # path('주소', 뷰, 주소의 별명)
     path('admin/', admin.site.urls),
-    path('message/', message),
-    path('guide/', guide),
-    path('example/', example),
-    path('logo_making/', logo_making),
-    path('contact/', contact),
-    path('color/', color),
-    path('result/', result),
-    path('edit/', edit),
-    path('home/', goHome),
-    path('imgtool/', imgtool),
-    path('write/', write),
-    path('', goHome), #위에서 매칭된 뷰가 없을 경우 이쪽으로 연결되기 때문에 맨 아래에 위치하는것이 좋음
+    path('guide/', guideViews.index, name="guide"),
+    path('example/', examplePageViews.index, name="example"),
+    path('logo_making/', logo_makingViews.index, name="logo_making"),
+    path('contact/', contactViews.index, name="contact"),
+    path('color/', resultPageViews.color, name="color"),
+    path('result/', resultPageViews.result, name="result"),
+    path('edit/', editViews.index, name="edit"),
+    path('loading/', resultPageViews.loading, name="loading"),
+    path('home/', homeViews.index, name="home"),
+    path('imgtool/', resultPageViews.imgtool, name="imgtool"),
+    # path('board/', include('Board.urls')),
+    path('', homeViews.index), #위에서 매칭된 뷰가 없을 경우 이쪽으로 연결되기 때문에 맨 아래에 위치하는것이 좋음
 ]
+

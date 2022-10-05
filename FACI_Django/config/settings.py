@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-h3mhcp0kggi^de603ibbrdcwh#15bzjj3#p%f53o!wal#%%pvk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'Board.apps.BoardConfig'
 ]
 
 MIDDLEWARE = [
@@ -77,8 +78,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'smai2',
+        'USER': 'smai2',
+        'PASSWORD': 'smai2',
+        'HOST': 'project-db-stu.ddns.net',
+        'PORT': '3307',
     }
 }
 

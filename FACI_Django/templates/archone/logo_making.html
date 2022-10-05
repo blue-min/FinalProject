@@ -151,16 +151,22 @@
                     <div class="container">
                         <div id="container_2">
                         <div class="row" >
-                            <div class="col-lg-12 col-md-12">
+                            <form method="post" enctype="multipart/form-data" action="{%url 'color'%}">
+                                 {% csrf_token %}
+
                                 <div id="img_container">
                                  <div><img src="../static/images/white.jpg" id="img_section" style="width: 50%; height: auto;"></div>
-                                <br><br>
-                                <input type="file" id="upload_file" accept="image/*" required=true value="업로드" style="margin-left: 250px;">
-
+                                <br><br><br><br>
+                                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" required=true value="업로드" style="margin-left: 250px;" onchange="loadFile(this)">
                                 </div>
 
 
-                                </div>
+                                <br>
+                                    <input type="submit">
+<!--                                <a href="#" class="btn" style="background-color: #EBC03B; border-radius: 10px; position: absolute; left: 46.5%; top: 97% width: 10%; height: 10%;" ><div id="go_making_btn" style="color:#464241;">제작하기</div></a>-->
+
+                             </form>
+                            </div>
                             </div>
                                 <script>
                                     const reader = new FileReader();
