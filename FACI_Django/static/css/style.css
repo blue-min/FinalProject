@@ -651,10 +651,10 @@ address { margin-bottom: 20px; font-style: normal; line-height: 1.42857143; }
 /*------------- Post Pagination -------------*/
 .st-pagination { text-align: center; }
 .st-pagination .pagination>li>a, .pagination>li>span { position: relative; float: left; margin-left: -1px; line-height: 1.42857143; color: #372d2b; text-decoration: none; font-size: 12px; background-color: #f3f0eb; font-weight: 700; text-transform: uppercase; margin-right: 5px; margin-bottom: 5px; padding: 8px 13px; border: 1px solid #efefef; border-radius: 100%; }
-.st-pagination .pagination>li>a:focus, .st-pagination .pagination>li>a:hover, .st-pagination .pagination>li>span:focus, .st-pagination .pagination>li>span:hover, .st-pagination .pagination>li>a.active { z-index: 2; color: #f3f0eb; background-color: #372d2b; border: 1px solid #372d2b; }
+.st-pagination .pagination>li>a:focus, .st-pagination .pagination>li>a:hover, .st-pagination .pagination>li>span:focus, .st-pagination .pagination>li>span:hover, .st-pagination .pagination>li>a.active { z-index: 2; color: #f3f0eb; background-color: #EBC03B; border: 1px solid #EBC03B; }
 .st-pagination .pagination>li:first-child>a, .st-pagination .pagination>li:first-child>span { margin-left: 0; border-radius: 100px; }
 .st-pagination .pagination>li:last-child>a, .st-pagination .pagination>li:last-child>span { border-radius: 100px; }
-.st-pagination .pagination>.active>a, .st-pagination .pagination>.active>a:focus, .st-pagination .pagination>.active>a:hover, .st-pagination .pagination>.active>span, .st-pagination .pagination>.active>span:focus, .st-pagination .pagination>.active>span:hover { z-index: 3; color: #fff; cursor: default; background-color: #372d2b; border: 1px solid #372d2b; }
+.st-pagination .pagination>.active>a, .st-pagination .pagination>.active>a:focus, .st-pagination .pagination>.active>a:hover, .st-pagination .pagination>.active>span, .st-pagination .pagination>.active>span:focus, .st-pagination .pagination>.active>span:hover { z-index: 3; color: #fff; cursor: default; background-color: #EBC03B; border: 1px solid #EBC03B; }
 
 /*----- Project -----*/
 .project-img {}

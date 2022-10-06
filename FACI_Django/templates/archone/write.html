@@ -50,7 +50,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <a href="/home"><img src="/static/images/logo.png"
+                <a href="/home"><img src="{% static 'images/mainlogo.png' %}" id="mainlogo"
                                      alt="Interior Design Website Templates Free Download"></a>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -88,10 +88,10 @@
         </div>
     </div>
 </div>
-<div class="content">
+<div class="content" style="padding-top:120px; padding-bottom:120px;">
     <div class="container">
         <!--<div class="row">-->
-        <h2>문의하기</h2>
+        <h2 id="h2_title">문의하기</h2>
             <form role="form" id="contact-form" class="contact-form">
                 <div class="row">
                     <div class="col-md-6">
@@ -233,7 +233,7 @@
         <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <div class="copyright-content">
-                   마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/">스마트인재개발원</a>
+                   마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/" id="a_smhrd">스마트인재개발원</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
