@@ -18,7 +18,8 @@
 #h2_title{
     font-weight:bold;
     padding-top:20px;
-    padding-bottom:20px;
+    padding-bottom:30px;
+    margin-left:10px;
 }
 
 #mainlogo{
@@ -26,4 +27,69 @@
     height:50px;
     position: absolute;
     right:147%;
+}
+
+#btn_move:hover{
+    background-color:#EBC03B;
+    border:0;
+    outline:0;
+
+}
+
+
+
+#btn_move:hover{
+     background:#EBC03B;
+     border:0;
+    outline:0;
+    color:white;
+}
+
+#btn_move:focus{
+    background-color:#372d2b;
+    border:0;
+    outline:0;
+
+}
+
+#btn_move:active{
+    background:#EBC03B;
+    border:0;
+    outline:0;
+    color:white;
+}
+
+#btn_move:visited{
+    background:#372d2b;
+    border:0;
+    outline:0;
+    color:white;
+}
+
+#btn_remove:hover{
+     background:#EBC03B;
+     border:0;
+    outline:0;
+    color:white;
+}
+
+#btn_remove:focus{
+    background-color:#372d2b;
+    border:0;
+    outline:0;
+
+}
+
+#btn_remove:active{
+    background:#EBC03B;
+    border:0;
+    outline:0;
+    color:white;
+}
+
+#btn_remove:visited{
+    background:#372d2b;
+    border:0;
+    outline:0;
+    color:white;
 }

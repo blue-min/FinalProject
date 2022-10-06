@@ -53,7 +53,7 @@
 #h2_title{
 
     display:inline-block;
-    margin-left:30px;
+    margin-left:20px;
 
 }
 
@@ -112,4 +112,26 @@
 #a_smhrd:hover{
    color:#aa9144;
 }
+
+#btn_search2:hover{
+     background:#EBC03B;
+     border:0;
+    outline:0;
+    color:white;
+}
+
+#btn_search2:focus{
+    background-color:#EBC03B;
+    border:0;
+    outline:0;
+
+}
+
+#btn_search2:active{
+    background:#EBC03B;
+    border:0;
+    outline:0;
+    color:white;
+}
+
 
