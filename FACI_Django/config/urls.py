@@ -44,7 +44,7 @@ urlpatterns = [
     path('loading/', resultPageViews.loading, name="loading"),
     path('home/', homeViews.index, name="home"),
     path('imgtool/', resultPageViews.imgtool, name="imgtool"),
-    # path('board/', include('Board.urls')),
+    path('Board/', include('Board.urls')),
     path('', homeViews.index), #위에서 매칭된 뷰가 없을 경우 이쪽으로 연결되기 때문에 맨 아래에 위치하는것이 좋음
 ]
 
