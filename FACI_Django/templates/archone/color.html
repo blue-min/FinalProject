@@ -40,7 +40,8 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <a href="/home"><img src="{% static 'images/whitelogo.png' %}"
-                                     alt="Interior Design Website Templates Free Download"  style="width: 190px; height:50px;"></a>
+                                     alt="Interior Design Website Templates Free Download"
+                                     style="width: 190px; height:50px;"></a>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="navigation">
@@ -74,16 +75,22 @@
 
 <div class="content" id="content_word">
     <div class="container">
-       <div id="h2_container">
- <h2 style="padding-left:30px;">단어선택</h2>
-</div>
-        <div class="row">
-            {% for i in list %}
-                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
-                    <a id = "{{i}}" class="word" href="/loading/?choice={{i}}">{{i}}</a>
-                </div>
-            {% endfor %}
 
+        <div id="word_container">
+            <div class="row">
+                <div id="h2_container">
+                    <h2 style="font-weight:bold; color:#372d2b;  margin-left:20px;
+    margin-bottom:50px;">단어 선택</h2>
+                </div>
+                {% for i in list %}
+                <div id="word_container2">
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                    <a id="{{i}}" class="word"  href="/loading/?choice={{i}}">{{i}}</a>
+                </div>
+                    </div>
+                {% endfor %}
+
+            </div>
         </div>
     </div>
 </div>
@@ -119,7 +126,7 @@
                     <!-- newsletter block -->
                     <h3 class="widget-title">도움을 주신 분들</h3>
                     <p>담임 : 최태양 선생님 <br>
-                    부담임 : 조자연 선생님</p>
+                        부담임 : 조자연 선생님</p>
                 </div>
                 <!-- newsletter block -->
             </div>
@@ -133,17 +140,17 @@
         <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <div class="copyright-content">
-                   마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/" id="a_smhrd">스마트인재개발원</a>
+                    마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/" id="a_smhrd">스마트인재개발원</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
                 <div class="footer-social">
                     <ul class="listnone">
-                        <li> <a href="#"><i class="fa fa-facebook-square"></i></a> </li>
-                        <li> <a href="#"><i class="fa fa-twitter-square"></i></a> </li>
-                        <li> <a href="#"><i class="fa fa-google-plus-square"></i></a> </li>
-                        <li> <a href="#"><i class="fa fa-youtube-square"></i></a> </li>
-                        <li> <a href="#"><i class="fa fa-pinterest-square"></i></a> </li>
+                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
                     </ul>
                 </div>
             </div>
