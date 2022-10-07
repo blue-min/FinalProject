@@ -272,22 +272,18 @@
                         <div id="container_2">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
-                                    <div id="img_container">
-
-                                        <div><img src="../static/images/white.jpg" id="img_section"
-                                                  style="width: 50%; height: auto;"></div>
+                                    <form method="post" enctype="multipart/form-data" action="{%url 'color'%}">
+                                        {% csrf_token %}
+                                        <div id="img_container">
+                                        <div><img src="../static/images/white.jpg" id="img_section" style="width: 50%; height: auto;"></div>
                                         <br><br><br><br>
-                                        <input type="file" id="upload_file" accept="image/*" required=true value="업로드"
-                                               style="margin-left: 250px;">
-                                    </div>
-                                    <div>
+                                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" required=true value="업로드" style="margin-left: 250px;" onchange="loadFile(this)">
+                                        </div>
                                         <br>
-                                        <!-- <a href="#" id="making_btn" style="background-color: #EBC03B; border-radius: 10px; position: absolute; left: 44%; top: 97%; width: 24%; height: 10%;" >-->
-                                        <a href="/color">
-                                            <button type="button" id="btn_making">제작하러 가기</button>
-                                        </a>
-                                    </div>
-
+                                        <input type="submit">
+    <!--                                <a href="#" class="btn" style="background-color: #EBC03B; border-radius: 10px; position: absolute; left: 46.5%; top: 97% width: 10%; height: 10%;" ><div id="go_making_btn" style="color:#464241;">제작하기</div></a>-->
+                                    </form>
+                                </div>
                                 </div>
                             </div>
                             <script>
@@ -298,7 +294,7 @@
 
                                     };
 
-                                    document.querySelector("#upload_file").addEventListener("change", (changeEvent) => {
+                                    document.querySelector("#chooseFile").addEventListener("change", (changeEvent) => {
 
 
                                         const imgFile = changeEvent.target.files[0];
