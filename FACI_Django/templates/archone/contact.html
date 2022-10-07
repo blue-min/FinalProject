@@ -43,36 +43,22 @@
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div id="logo_container">
                 <a href="/home">
-                    <img src="{% static 'images/mainlogo.png' %}" id="mainlogo"
-                                     alt="Interior Design Website Templates Free Download"></a>
+                    <img src="{% static 'images/whitelogo.png' %}" id="mainlogo"
+                                     alt="Interior Design Website Templates Free Download"  style="width: 190px; height:50px;"></a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="navigation">
                     <div id="navigation">
                         <ul>
-                            <li class="active"><a href="/home" title="Home">홈</a></li>
+                            <li class="active" id="active"><a href="/home" title="Home">홈</a></li>
                             <li class="has-sub"><a href="/guide" title="guide">사용자 가이드</a>
-                                <!-- <ul>
-                                    <li><a href="service-list.html" title="Service List">Service List</a></li>
-                                    <li><a href="service-detail.html" title="Service Detail">Service Detail</a></li>
-                                </ul> -->
                             </li>
-                            <li class="has-sub"><a href="/example" title="example">제품 및 서비스</a>
-                                <!--                                    <ul>-->
-                                <!--                                        <li><a href="projects.html" title="Projects">Projects</a></li>-->
-                                <!--                                        <li><a href="/logo_making" title="logoMaking">Projects Detail</a></li>-->
-                                <!--                                    </ul>-->
-                            </li>
+
                             <li class="has-sub"><a href="/logo_making" title="logo_making">로고 제작</a>
-                                <!--                                    <ul>-->
-                                <!--                                        <li><a href="/guide" title="Blog">Blog Default</a></li>-->
-                                <!--                                        <li><a href="/example" title="Blog Single ">Blog Single</a></li>-->
-                                <!--                                    </ul>-->
                             </li>
                             <li id="nv_contact"><a href="/contact" title="contact">문의사항</a></li>
-                            <!--                                <li><a href="testimonial.html" title="Testimonial">Testimonial</a> </li>-->
-                            <!--                                <li><a href="error.html" title="Error">404 error</a> </li>-->
+
                         </ul>
                     </div>
                 </div>
@@ -86,8 +72,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="page-caption">
                     <h2 class="page-title">문의사항</h2>
-                    <!--<p>Mauris iaculis mollis risus at fermentum proin tempus utvelit id
-                        <br> tincidunteu blandit estorbi imperdiet lacus leo ultrices.</p>-->
+
                 </div>
             </div>
         </div>
@@ -117,153 +102,106 @@
                     <table id="mytable" class="table table-bordred table-striped">
 
                         <thead>
-                        <!--  <th><input type="checkbox" id="checkall" /></th>-->
+
                         <th>글 번호</th>
                         <th>이름</th>
                         <th>작성일자</th>
                         <th>제목</th>
-                        <!-- <th>작성일자</th>
-                          <th>Edit</th>
 
-                           <th>Delete</th>-->
                         </thead>
                         <tbody>
 
                         <tr>
-                            <!--  <td><input type="checkbox" class="checkthis" /></td>-->
+
                             <td></td>
                             <td></td>
                             <td>2022-09-27  15:30:52</td>
                             <td><a href="/message" class="contact_title">많이 묻는 질문</a></td>
 
-                            <!--&lt;!&ndash; <td>+923335586757</td>&ndash;&gt;
-                             <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                             <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+
                         </tr>
                         <tr>
-                            <!--  <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>Number</td>
-                            <td>Name</td>
+
+                            <td>1</td>
+                            <td>강미리</td>
                             <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
-                            <!-- <td>+923335586757</td>-->
-                            <!--  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                              <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 견적 문의</a></td>
                         </tr>
 
 
                         <tr>
-                            <!--   <td><input type="checkbox" class="checkthis" /></td>-->
                             <td></td>
                             <td></td>
                             <td>2022-09-27  15:30:52</td>
                             <td><a href="/message" class="contact_title"><img src="{% static 'images/화살표.png'%}" style="width:12px; height:12px;"> <img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 답변</a></td>
-                            <!-- <td>+923335586757</td>-->
-                            <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
                         </tr>
 
 
                         <tr>
-                            <!-- <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>Number</td>
-                            <td>Name</td>
-                            <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
-                            <!--<td>+923335586757</td>-->
-                            <!-- <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                             <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+                            <td>2</td>
+                            <td>박지수</td>
+                            <td>2022-10-03  12:30:00</td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 사용방법 문의</a></td>
                         </tr>
 
 
                         <tr>
-                            <!--<td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>Number</td>
-                            <td>Name</td>
-                            <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
-                            <!--<td>+923335586757</td>-->
-                            <!--<td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                            <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+                            <td>3</td>
+                            <td>정민</td>
+                            <td>2022-09-27  17:21:24</td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 문의</a></td>
                         </tr>
 
                          <tr>
-                            <!--   <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>Number</td>
-                            <td>Name</td>
-                            <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
-                            <!-- <td>+923335586757</td>-->
-                            <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+                            <td>4</td>
+                            <td>양명호</td>
+                            <td>2022-10-04  11:10:13</td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 사진 문의</a></td>
                         </tr>
 
                          <tr>
-                            <!--   <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>Number</td>
-                            <td>Name</td>
-                            <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
-                            <!-- <td>+923335586757</td>-->
-                            <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+                              <td>5</td>
+                            <td>박광희</td>
+                            <td>2022-10-01  09:15:16</td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 사진크기 문의</a></td>
                         </tr>
 
                          <tr>
-                            <!--   <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>Number</td>
-                            <td>Name</td>
-                            <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
-                            <!-- <td>+923335586757</td>-->
-                            <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+                            <td>6</td>
+                            <td>김은영</td>
+                            <td>2022-09-30  10:27:12</td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 문의</a></td>
                         </tr>
 
                          <tr>
-                            <!--   <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>Number</td>
-                            <td>Name</td>
-                            <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
-                            <!-- <td>+923335586757</td>-->
-                            <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+                            <td>7</td>
+                            <td>이수빈</td>
+                            <td>2022-09-28  08:27:09</td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 비밀번호 찾기</a></td>
                         </tr>
 
                          <tr>
-                            <!--   <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>Number</td>
-                            <td>Name</td>
-                            <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
-                            <!-- <td>+923335586757</td>-->
-                            <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+                            <td>8</td>
+                            <td>김준호</td>
+                            <td>2022-09-23  09:15:14</td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 로고 크기</a></td>
                         </tr>
 
                          <tr>
-                            <!--   <td><input type="checkbox" class="checkthis" /></td>-->
-                            <td>Number</td>
-                            <td>Name</td>
-                            <td>2022-09-27  15:30:52</td>
-                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;"> 제 얼굴이 이렇게 생겼다구요? 고소할게요.</a></td>
-                            <!-- <td>+923335586757</td>-->
-                            <!--    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>-->
+                            <td>9</td>
+                            <td>최대열</td>
+                            <td>2022-09-21  07:16:08</td>
+                            <td><a href="/message" class="contact_title"><img src="{% static 'images/자물쇠.png'%}" style="width:12px; height:12px;">아이디 찾기</a></td>
                         </tr>
 
 
                         </tbody>
 
                     </table>
-                  <!--  <div id="search_container">-->
                         <button class="btn main-btn pull-right" id="write" onclick="location.href='/write';">글쓰기</button>
-                    <!--<div class="col-md-3">
 
-                    </div>-->
                     <div class="clearfix"></div>
-                         <!--</div>-->
+
                     <div id="pagination_container">
                         <ul class="pagination justify-content-center" id="pagination">
                             <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>

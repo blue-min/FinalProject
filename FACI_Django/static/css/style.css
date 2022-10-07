@@ -366,7 +366,8 @@ url(../images/cta-section-img.jpg) no-repeat center; background-size: cover; }
 #navigation.align-center ul ul { text-align: left; }
 #navigation.align-right > ul > li { float: right; }
 #navigation > ul > li > a { padding: 15px; font-size: 20px; color: white; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
-#navigation > ul > li:hover > a { color: #ffffff; background-color: #e7a625; }
+#navigation > ul > li > a { padding: 15px; font-size: 20px; color: white; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+#navigation > ul > li:hover > a { color:#e7a625; /*background-color: #e7a625;*/ }
 #navigation > ul > li.has-sub > a { padding-right: 32px; }
 
 /*#navigation > ul > li.has-sub > a:after {

@@ -1,0 +1,46 @@
+/*#nv_contact:hover{
+    background-color:transparent;
+}*/
+#a_btn1{
+    color:#372d2b;
+}
+#a_btn1:hover{
+    color:white;
+    border:#EBC03B;
+    outline:#EBC03B;
+}
+
+#btn_making{
+    background-color:#EBC03B;
+    color:#372d2b;
+}
+
+#btn_making:hover{
+    color:white;
+}
+
+#main_last_btn{
+    align:center;
+}
+
+#btn_making{
+    background-color:#EBC03B;
+    position:absolute;
+    left:30%;
+    margin:50px;
+    width:200px;
+    height:50px;
+    border-radius:30px;
+    border:0;
+    font-family:'NanumGothic', sans-serif;
+    font-weight:bold;
+    font-size: 14px;
+
+}
+
+#a_smhrd{
+   color:#EBC03B;
+}
+
+
+

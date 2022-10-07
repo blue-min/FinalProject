@@ -39,8 +39,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <a href="/home"><img src="/static/images/logo.png"
-                                     alt="Interior Design Website Templates Free Download"></a>
+                <a href="/home"><img src="{% static 'images/whitelogo.png' %}"
+                                     alt="Interior Design Website Templates Free Download"  style="width: 190px; height:50px;"></a>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="navigation">
@@ -48,26 +48,11 @@
                         <ul>
                             <li class="active"><a href="/home" title="Home">홈</a></li>
                             <li class="has-sub"><a href="/guide" title="guide">사용자 가이드</a>
-                                <!-- <ul>
-                                    <li><a href="service-list.html" title="Service List">Service List</a></li>
-                                    <li><a href="service-detail.html" title="Service Detail">Service Detail</a></li>
-                                </ul> -->
-                            </li>
-                            <li class="has-sub"><a href="/example" title="example">제품 및 서비스</a>
-                                <!--                                    <ul>-->
-                                <!--                                        <li><a href="projects.html" title="Projects">Projects</a></li>-->
-                                <!--                                        <li><a href="/logo_making" title="logoMaking">Projects Detail</a></li>-->
-                                <!--                                    </ul>-->
                             </li>
                             <li class="has-sub"><a href="/logo_making" title="logo_making">로고 제작</a>
-                                <!--                                    <ul>-->
-                                <!--                                        <li><a href="/guide" title="Blog">Blog Default</a></li>-->
-                                <!--                                        <li><a href="/example" title="Blog Single ">Blog Single</a></li>-->
-                                <!--                                    </ul>-->
                             </li>
                             <li><a href="/contact" title="contact">문의사항</a></li>
-                            <!--                                <li><a href="testimonial.html" title="Testimonial">Testimonial</a> </li>-->
-                            <!--                                <li><a href="error.html" title="Error">404 error</a> </li>-->
+
                         </ul>
                     </div>
                 </div>
@@ -81,15 +66,17 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="page-caption">
                     <h2 class="page-title">색 추천</h2>
-                    <!--<p>Mauris iaculis mollis risus at fermentum proin tempus utvelit id
-                        <br> tincidunteu blandit estorbi imperdiet lacus leo ultrices.</p>-->
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <div class="content" id="content_word">
     <div class="container">
+       <div id="h2_container">
+ <h2 style="padding-left:30px;">단어선택</h2>
+</div>
         <div class="row">
             {% for i in list %}
                 <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
@@ -97,83 +84,6 @@
                 </div>
             {% endfor %}
 
-            <!--<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                <div class="bg-light pinside30">
-                  &lt;!&ndash;  <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h1>Get in touch with us</h1>
-                            <p>Please complete the form below. We'll do everything we can to respond to you as quickly as possible.</p>
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group has-feedback">
-                                            <label class="control-label" for="name">name</label>
-                                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                <input type="text" class="form-control" id="name">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group has-feedback">
-                                            <label class="control-label" for="email">email</label>
-                                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                <input type="text" class="form-control" id="email">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group has-feedback">
-                                            <label class="control-label" for="subject">Subject</label>
-                                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-globe"></i></span>
-                                                <input type="text" class="form-control" id="subject">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group has-feedback">
-                                            <label class="control-label" for="phone">Phone</label>
-                                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                                                <input type="text" class="form-control" id="phone">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="form-group">
-                                            <label class="control-label" for="textarea">Message</label>
-                                            <textarea class="form-control" id="textarea" name="textarea" rows="6" placeholder=""></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <button id="singlebutton" name="singlebutton" class="btn btn-default">send message</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>&ndash;&gt;
-                </div>
-            </div>-->
-            <!--          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                          <div class="contact-pic mb30"> <img src="/static/images/contact-pic.jpg" class="img-responsive" alt=""> </div>
-                          <div class="contact-info">
-                              <h2>archone interior- exterior design</h2>
-                              <address>
-                                  1309 Roosevelt Wilson Lane
-                                  <br> Colton, CA 92324
-                              </address>
-                              <address>
-                                  <span class="text-caps">studio:</span> <strong>180-751-3956</strong>
-                                  <br>
-                                  <span class="text-caps">Mobile:</span> <strong>180-752-3957</strong>
-                              </address>
-                              <address>
-                                  <span class="text-caps">e-mail:</span> <strong>info@yourwebsitedomain.com</strong>
-                              </address>
-                              <div class="social-circle"> <span class="text-caps">Be social: </span> <a href="#"><i class="fa fa-facebook-square"></i></a> <a href="#"><i class="fa fa-twitter-square"></i></a> <a href="#"><i class="fa fa-google-plus-square"></i></a> <a href="#"><i class="fa fa-youtube-square"></i></a> <a href="#"><i class="fa fa-pinterest-square"></i></a> </div>
-                          </div>
-                          &lt;!&ndash; /.widget search &ndash;&gt;
-                      </div>-->
         </div>
     </div>
 </div>
@@ -183,57 +93,57 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-widget">
-                    <h3 class="widget-title">About us</h3>
-                    <p>Phasellus hendrerit mauris vitae odio suscip pimus donec consequat cursus viverra varius natoque
-                        penatibus magnis dis parturient.</p>
+                    <h3 class="widget-title">코딩 지니어스 FACI팀</h3>
+                    <p>FACI 얼굴마담 팀장 정 민 <br> 스인개 유아 강미리 <br> 미키 박광희 <br> 깜찍 그 잡채 박지수 <br> 쓰레기차 랏소 베어 양명호</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-widget">
                     <!-- social block -->
-                    <h3 class="widget-title">Our Address</h3>
-                    <p>1309 Roosevelt Wilson Lane
-                        <br> Colton, CA 92324</p>
+                    <h3 class="widget-title">스마트인재개발원</h3>
+                    <p>인공지능 융합서비스 개발자과정
+                        <br>실전융합프로젝트</p>
                 </div>
                 <!-- /.social block -->
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="footer-widget">
                     <!-- newsletter block -->
-                    <h3 class="widget-title">e-mail Us</h3>
-                    <p>info@yourwebsitedomain.com</p>
+                    <h3 class="widget-title">문제사항 있을시</h3>
+                    <p>ilb0919497@gmail.com <br> 미닝이 이메일로 연락주세요</p>
                 </div>
                 <!-- newsletter block -->
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="footer-widget">
                     <!-- newsletter block -->
-                    <h3 class="widget-title">Call us</h3>
-                    <p>180-874-5234</p>
-                    <p>180-752-3957</p>
+                    <h3 class="widget-title">도움을 주신 분들</h3>
+                    <p>담임 : 최태양 선생님 <br>
+                    부담임 : 조자연 선생님</p>
                 </div>
                 <!-- newsletter block -->
             </div>
         </div>
     </div>
 </div>
+<!-- /.footer-->
 <div class="tiny-footer">
     <!-- tiny footer block -->
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <div class="copyright-content">
-                    Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
+                   마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/" id="a_smhrd">스마트인재개발원</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
                 <div class="footer-social">
                     <ul class="listnone">
-                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-facebook-square"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-twitter-square"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-google-plus-square"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-youtube-square"></i></a> </li>
+                        <li> <a href="#"><i class="fa fa-pinterest-square"></i></a> </li>
                     </ul>
                 </div>
             </div>

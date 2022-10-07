@@ -37,9 +37,7 @@
     text-align: center;
     margin-top: 160px;
 }
-.controls span{
 
-}
 
 
 
@@ -57,3 +55,32 @@ h1{
   margin-bottom: 2em;
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
 }*/
+
+#a_smhrd{
+   color:#EBC03B;
+}
+
+#a_smhrd:hover{
+   color:#aa9144;
+}
+
+#btn_making{
+    background-color:#EBC03B;
+    position:absolute;
+    left:30%;
+    margin-left:92px;
+   /* margin:50px;*/
+    width:150px;
+    height:31px;
+    border-radius:10px;
+    border:0;
+    font-family:'NanumGothic', sans-serif;
+   /* font-weight:bold;*/
+    font-size: 14px;
+    color:#372d2b;
+}
+
+
+upload_file:hover{
+    color:white;
+}
