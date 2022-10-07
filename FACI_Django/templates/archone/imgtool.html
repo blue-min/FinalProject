@@ -14,6 +14,8 @@
     <meta name="keywords"
           content="interior design, furniture, exterior furniture, furniture company, bootstrap interior design website templates, interior design & furniture website templates">
     <title>Interior Design Website Templates Free Download</title>
+    <!-- imgtool페이지 css -->
+    <link href="{% static 'css/imgtool.css'%}" rel="stylesheet">
      <!-- fabric css   -->
     <link href="{% static 'css/fabric.css'%}" rel="stylesheet">
     <!-- Bootstrap -->
@@ -99,7 +101,7 @@
 
                 </canvas>
                 <div class="tool_color" style="display:inline-block;">
-                    <h1>로고 꾸미기</h1>
+                    <h1 id="h1_title">로고 꾸미기</h1>
                     <label style="visibility:hidden">Use WebGl<input type="checkbox" id="webgl"
                                                                      checked=""></label>
                     <div id="bench" style="visibility:hidden">720 x 1080px 1ms</div>
@@ -132,9 +134,12 @@
                         <label>Alpha: <input type="range" id="blend-alpha" min="0" max="1" value="1"
                                              step="0.01"></label><br>
                         <!-- 텍스트 입력 : <input id="draw_text" value="Hello World."> -->
-                        <button id="draw_text" style="background-color:black; color:white;">텍스트 추가</button>
-                        <button id="remove_img" style="background-color:black; color:white;">삭제하기</button>
-                        <button id="save_img" style="background-color:black; color:white;">저장하기</button>
+                        <button class="btn main-btn pull-right" id="draw_text" style="margin:2px;">텍스트 추가</button>
+                       <!-- <button id="draw_text" style="background-color:black; color:white;">텍스트 추가</button>-->
+                        <button class="btn main-btn pull-right" id="remove_img" style="margin:2px;">삭제하기</button>
+                       <!-- <button id="remove_img" style="background-color:black; color:white;">삭제하기</button>-->
+                          <button class="btn main-btn pull-right" id="save_img" style="margin:2px;">저장하기</button>
+                        <!--<button id="save_img" style="background-color:black; color:white;">저장하기</button>-->
 
                     </p>
                 </div>
@@ -497,7 +502,7 @@
         <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <div class="copyright-content">
-                   마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/">스마트인재개발원</a>
+                   마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/" id="a_smhrd">스마트인재개발원</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">

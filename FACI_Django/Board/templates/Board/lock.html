@@ -42,13 +42,9 @@
 <div class="header navbar-fixed-top">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <div id="logo_container">
-                    <a href="/home">
-                        <img src="{% static 'images/mainlogo.png' %}" id="mainlogo"
-                             alt="Interior Design Website Templates Free Download"></a>
+             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a href="/home"><img src="/static/images/whitelogo.png" alt="Interior Design Website Templates Free Download" style="width: 190px; height:50px;"></a>
                 </div>
-            </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="navigation">
                     <div id="navigation">
@@ -57,9 +53,9 @@
                             <li class="has-sub"><a href="/guide" title="guide">사용자 가이드</a>
 
                             </li>
-                            <li class="has-sub"><a href="/example" title="example">제품 및 서비스</a>
+                          <!--  <li class="has-sub"><a href="/example" title="example">제품 및 서비스</a>
 
-                            </li>
+                            </li>-->
                             <li class="has-sub"><a href="/logo_making" title="logo_making">로고 제작</a>
 
                             </li>
@@ -91,12 +87,12 @@
 
                 <div id="lock_container">
                     <div id="h2_container">
-                    <h2 id="h2_title" style="margin-left:0;">Q & A</h2>
+                    <h1 id="h1_title" style="margin-left:0;">비밀글 보기</h1>
                         </div>
                     <hr>
 
                     <div id="h2_container2">
-                    <h2 id="h2_title2">비밀글보기</h2>
+                    <h2 id="h2_title">ㅤㅤㅤㅤㅤㅤ</h2>
                     </div>
                     <div id="secret">
                         <fieldset>
@@ -110,7 +106,7 @@
                                 <br>
                                 <input type="hidden" value="{{id}}" id="id">
                                 <input type="password" id="password" name="password">
-                                <input type="submit" value="확인" onclick="check()">
+                                <input type="submit" value="확인" onclick="check()" id="btn_check">
                                 </p>
                                 </div>
                         </fieldset>

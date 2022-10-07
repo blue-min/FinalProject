@@ -1,3 +1,33 @@
-#mainlogo{
+#draw_text, #save_img, #remove_img{
+    background-color:#372d2b;
+    color:white;
+}
 
+#draw_text:hover, #remove_img:hover, #save_img:hover{
+    background-color:#EBC03B;
+    color:white;
+}
+
+#draw_text:focus, #remove_img:focus, #save_img:focus{
+    border:0;
+    outline:0;
+}
+
+#draw_text:active, #remove_img:active, #save_img:active{
+    background-color:#EBC03B;
+    color:white;
+    outline:0;
+    border:0;
+}
+
+#h1_title{
+    font-weight:bold;
+}
+
+#a_smhrd{
+   color:#EBC03B;
+}
+
+#a_smhrd:hover{
+   color:#aa9144;
 }

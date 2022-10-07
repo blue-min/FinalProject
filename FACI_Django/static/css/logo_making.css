@@ -42,23 +42,11 @@
 
 
 // non-related styling:
-/*body{
-  background: #333;
-  color: #ddd;
-}*/
-/*
-h1{
-  color: white;
-  font-size: 2.25em;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
-}*/
 
-#a_smhrd{
+
+/*#a_smhrd{
    color:#EBC03B;
-}
+}*/
 
 #a_smhrd:hover{
    color:#aa9144;
@@ -80,7 +68,21 @@ h1{
     color:#372d2b;
 }
 
+#input_btn{
+   border:0;
+   outline:0;
+   color:black;
+   background-color:#EBC03B;
+   position:absolute;
+   left:256px;
+   width:150px;
+   border-radius:10px;
+   margin:10px;
+   font-family: 'NanumGothic', sans-serif;"
+}
 
-upload_file:hover{
+
+#input_btn:hover{
     color:white;
 }
+

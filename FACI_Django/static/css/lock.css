@@ -60,14 +60,16 @@ td{
     display:inline-block;
 }*/
 
-#h2_container{
+/*#h2_container{
     display:flex;
     justify-content:space-around;
-}
+}*/
 
-#h2_title{
+#h1_title{
     text-align:center;
     display:inline-block;
+    font-weight:bold;
+    margin-left:30px;
 
 }
 
@@ -81,7 +83,7 @@ td{
     text-align:center;
 }
 
-#h2_title2{
+#h2_title{
     padding-top:10px;
     font-size:20px;
 }
@@ -115,5 +117,18 @@ td{
     border-bottom:1px solid #d5d5d5;
     background-color:rgb(240, 240, 240);
     text-align:center;
+}
+
+#btn_check{
+    border:0;
+    outline:0;
+    color:white;
+    background-color:#372d2b;
+   /* border-radius:20px;*/
+}
+
+#btn_check:hover{
+    color:white;
+    background-color:#EBC03B;
 }
 

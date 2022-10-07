@@ -39,11 +39,9 @@
 <div class="header navbar-fixed-top">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <a href="/home"><img src="/static/images/whitelogo.png"
-                                     alt="Interior Design Website Templates Free Download"
-                                     style="width: 190px; height:50px;"></a>
-            </div>
+             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a href="/home"><img src="/static/images/whitelogo.png" alt="Interior Design Website Templates Free Download" style="width: 190px; height:50px;"></a>
+                </div>
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <div class="navigation">
                     <div id="navigation">
@@ -54,7 +52,7 @@
                             </li>
                             <li class="has-sub"><a href="/logo_making" title="logo_making">로고 제작</a>
                             </li>
-                            <li><a href="/contact" title="contact">고객센터</a></li>
+                            <li><a href="/contact" title="contact">문의사항</a></li>
 
                         </ul>
                     </div>
@@ -280,7 +278,8 @@
                                         <input type="file" id="chooseFile" name="chooseFile" accept="image/*" required=true value="업로드" style="margin-left: 250px;" onchange="loadFile(this)">
                                         </div>
                                         <br>
-                                        <input type="submit">
+                                       <!-- padding-left:35px; padding-right:40px;-->
+                                        <input type="submit" id="input_btn" value="로고 제작">
     <!--                                <a href="#" class="btn" style="background-color: #EBC03B; border-radius: 10px; position: absolute; left: 46.5%; top: 97% width: 10%; height: 10%;" ><div id="go_making_btn" style="color:#464241;">제작하기</div></a>-->
                                     </form>
                                 </div>
@@ -362,8 +361,8 @@
         <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <div class="copyright-content">
-                    마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/" id="a_smhrd"
-                                                          style="color:#EBC03B;">스마트인재개발원</a>
+                    마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/" id="a_smhrd" style="color:#EBC03B;"
+                                                        >스마트인재개발원</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
