@@ -104,6 +104,7 @@
                                 <br>
                                 <span style="margin-bottom:30px;">비밀번호를 입력하여 주세요.</span>
                                 <br>
+                                <input type="hidden" value="{{pw}}" id="pw">
                                 <input type="hidden" value="{{id}}" id="id">
                                 <input type="password" id="password" name="password">
                                 <input type="submit" value="확인" onclick="check()" id="btn_check">
@@ -112,14 +113,18 @@
                         </fieldset>
 
                         <script>
+
                             function check() {
 
-                                const pw = document.getElementById("password").value;
+                                const user_pw = document.getElementById("password").value;
+
                                 const id = document.getElementById("id").value;
-                                console.log(id)
-                                console.log(pw)
-                                if(pw == id){
+                                console.log(user_pw)
+
+
+                                if(user_pw == {{pw}}){
                                 location.href="{% url 'detail' id %}";
+
                                 }else{alert("비번 틀림");}
                             }
                         </script>
