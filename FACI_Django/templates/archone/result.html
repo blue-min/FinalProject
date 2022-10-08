@@ -47,13 +47,15 @@
                                 <li class="has-sub"><a href="/guide" title="guide">사용자 가이드</a>
 
                                 </li>
-                                <!--<li class="has-sub"><a href="/example" title="example">제품 및 서비스</a>
+                                <!--  <li class="has-sub"><a href="/example" title="example">제품 및 서비스</a>
 
-                                </li>-->
-                                <li class="has-sub"><a href="/logo_making" title="logo_making">로고 제작</a>
+                            </li>-->
+                            <li class="has-sub"><a href="/logo_making" title="logo_making">로고 제작</a>
 
-                                </li>
-                                <li><a href="/contact" title="contact">문의사항</a> </li>
+                            </li>
+                            <li><a href="/contact" title="contact" id="nv_contact">문의사항</a></li>
+                            </li>
+
                             </ul>
                         </div>
                     </div>
@@ -62,7 +64,7 @@
         </div>
     </div>
     <div class="page-header">
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="page-caption">
@@ -74,7 +76,7 @@
         </div>
     </div>
     <div class="content" id="content">
-        <div class="container">
+        <div class="container" id="result_container">
 
             <div id="result">
                     <div id="result_word">
@@ -91,8 +93,10 @@
                          <img src="{{img_url}}" id="result_logo">
 
                     <div id="btn_container">
-            <button id="btn_other" onClick="location.href='/logo_making'">다른 사진 업로드</button>
-            <button id="btn_decorate" onclick="location.href='/imgtool';">로고 꾸미기</button>
+                        <button class="btn main-btn pull-right"  id="btn_other"  onclick="location.href='/logo_making'">다른 사진 업로드</button>
+           <!-- <button id="btn_other" onClick="location.href='/logo_making'">다른 사진 업로드</button>-->
+           <!-- <button id="btn_decorate" onclick="location.href='/imgtool';">로고 꾸미기</button>-->
+                         <button class="btn main-btn pull-right"  id="btn_decorate"  onclick="location.href='/imgtool'">로고 꾸미기</button>
     </div>
                 </div>
     </div>
@@ -143,7 +147,7 @@
         <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                 <div class="copyright-content">
-                   마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/" id="a_smhrd">스마트인재개발원</a>
+                   마지막 프로젝트 <i class="fa fa-love"></i><a href="https://smhrd.or.kr/" id="a_smhrd" >스마트인재개발원</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">

@@ -5,3 +5,26 @@
 #a_smhrd:hover{
    color:#aa9144;
 }
+
+.main_container{
+    display:flex;
+    justify-content:center;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7{
+    display:inline-block;
+    width:1200px;
+    height:700px;
+    margin-bottom:250px;
+}
+
+#h1_title{
+    font-weight:bold;
+    margin-bottom:100px;
+}
+
+.p_title{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:50px;
+}
