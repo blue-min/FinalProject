@@ -11,10 +11,13 @@ class ArticleList(ListView):
 
 class ArticleCreate(CreateView):
     model = Article
-    fields = ['title', 'password', 'author', 'content']
+    fields = ['title', 'password', 'author', 'content', 'answer']
     success_url = reverse_lazy('index')
 
 class ArticleDetail(DetailView):
+    model = Article
+
+class ArticleAnswer(DetailView):
     model = Article
 
 class ArticleUpdate(UpdateView):
@@ -42,4 +45,22 @@ def Lock(request, id):
         print("Failed Selecting in StockList")
 
     return render(request, 'Board/lock.html', {'pw': pw, 'id' : id})
+
+def LockAnswer(request, id):
+    post = Article.objects.get(id=id)
+    pw = ""
+    try:
+        cursor = connection.cursor()
+        query = "select password from Board_article where id = "+str(id)
+        result = cursor.execute(query)
+        stocks = cursor.fetchall()
+        connection.commit()
+        connection.close()
+        pw = stocks[0][0]
+    except:
+        connection.rollback()
+        print("Failed Selecting in StockList")
+
+    return render(request, 'Board/lock_answer.html', {'pw': pw, 'id' : id})
+
 
