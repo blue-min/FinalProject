@@ -182,6 +182,20 @@ function sendBoardViewDataHandler(response, state)
 
                                             </td>
                                         </tr>
+                                        {% if each.answer != '0' %}
+                                         <tr>
+                                            <th scope="row"><span>답변</span></th>
+
+                                        </tr>
+                                        <tr class="qna">
+                                            <td class="content-box" colspan="2" style="padding:50px" ;>
+
+                                                <p>{{object.answer}}</p>
+
+                                            </td>
+                                        </tr>
+
+                                        {% endif %}
 
 
                                         <tr id="mb_quest_tr_tag" style=";display:none;">
