@@ -1,5 +1,5 @@
 from django.shortcuts import render
-import fileUpload.photo2cartoon.makeLogo as ml
+#import fileUpload.photo2cartoon.makeLogo as ml
 from django.core.files.storage import FileSystemStorage
 import threading
 import time
@@ -62,7 +62,7 @@ def logoMaking(uploaded_file_url, filename):
 
     global check
     global img_url
-    img_url = ml.makeLogo(uploaded_file_url, filename)
+    #img_url = ml.makeLogo(uploaded_file_url, filename)
     time.sleep(5)
     check = True
 
