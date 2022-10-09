@@ -143,7 +143,7 @@
                             <td>{{each.id}}</td>
                             <td>{{each.answer}}</td>
                             <td>{{each.created_at|date:'Y-m-d, H:i'}}</td>
-                            <td><a href="/message"></a><a href="{% url 'lock_answer' each.id %}" class="contact_title">{{each.title}}</a></td>
+                            <td><a href="/message"></a><a href="{% url 'lock' each.id %}" class="contact_title">{{each.title}}</a></td>
                         </tr>
                         {% endif %}
 

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-#import fileUpload.photo2cartoon.makeLogo as ml
+import fileUpload.photo2cartoon.makeLogo as ml
 from django.core.files.storage import FileSystemStorage
 import threading
 import time
@@ -54,7 +54,7 @@ list = ['사랑스러운', '정열적인', '클래식한', '몽환적인',
             '깨끗한', '고급스러운', '강렬한', '명량한']
 
 check = False
-img_url = 'capture2'
+img_url = ''
 color = ''
 choice = ''
 
@@ -62,7 +62,7 @@ def logoMaking(uploaded_file_url, filename):
 
     global check
     global img_url
-    #img_url = ml.makeLogo(uploaded_file_url, filename)
+    img_url = ml.makeLogo(uploaded_file_url, filename)
     time.sleep(5)
     check = True
 
