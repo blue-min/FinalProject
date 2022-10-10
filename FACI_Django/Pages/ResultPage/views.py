@@ -104,7 +104,7 @@ def color(request):
         thread = threading.Thread(target=logoMaking, args=(uploaded_file_url, filename))
         thread.start()
 
-    return render(request, 'archone/color_check.html',{'list' : list})
+    return render(request, 'archone/color.html',{'list' : list})
 
 def imgtool(request):
 
