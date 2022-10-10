@@ -25,6 +25,7 @@ class ArticleUpdate(UpdateView):
     fields = ['title', 'password', 'author', 'content']
     success_url = reverse_lazy('index')
 
+
 class ArticleDelete(DeleteView):
     model = Article
     success_url = reverse_lazy('index')
