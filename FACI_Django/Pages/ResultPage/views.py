@@ -16,11 +16,11 @@ word = {'사랑스러운' : ['#FFD2D2', '#FAB7B7', '#F4A0A0'],
          '쾌활한' : ['#FF3CBB', '#FF9614', '#FFEB46'],
          '차가운' : ['#46BEFF' , '#50C8FF', '#5AD2FF'],
          '발랄한' : ['#FFC0CB', '#FFC314', '#FFEB46'],
-         '깔끔한' : ['#FFFFFF', '#B4E5FF', '#AADBF'],
+         '깔끔한' : ['#FFFFFF', '#B4E5FF', '#87CEEB'],
 
          '다정한' : ['##FFBC9B', '#FFB937', '#FFC7AD'],
          '개구진' : ['#9EF048', '#FFFA78', '#48DAD'],
-         '우아한' : ['#FFFFFF', '#FDF5E6', '#FDF5D'],
+         '우아한' : ['#FFFFFF', '#FDF5E6', '#F0E68C'],
          '귀여운' : ['#FFC5D0', '#FFCAD', '#FFC0CB'],
          '단아한' : ['#FDF5E6', '#9BDADC', '#B9E2FA'],
          '청초한' : ['#CCE1FF', '#A4C3FF', '#AECDF'],
@@ -45,6 +45,7 @@ word = {'사랑스러운' : ['#FFD2D2', '#FAB7B7', '#F4A0A0'],
          '고급스러운' : ['#F6C17B', '#C29F6D', '#906D3B'],
          '강렬한' : ['#FF0000', '#EB0000', '#CD0000'],
          '명량한' : ['#52E4DC', '#000069', '#FFC81E']}
+
 list = ['사랑스러운', '정열적인', '클래식한', '몽환적인',
             '신비로운', '화사한', '상큼한', '순수한',
             '쾌활한', '차가운', '발랄한', '깔끔한',
@@ -103,7 +104,7 @@ def color(request):
         thread = threading.Thread(target=logoMaking, args=(uploaded_file_url, filename))
         thread.start()
 
-    return render(request, 'archone/color.html',{'list' : list})
+    return render(request, 'archone/color_check.html',{'list' : list})
 
 def imgtool(request):
 
