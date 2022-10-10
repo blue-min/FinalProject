@@ -15,7 +15,7 @@
     display:inline-block;
     width:1200px;
     height:700px;
-    margin-bottom:250px;
+    margin-bottom:150px;
 }
 
 #h1_title{
@@ -27,4 +27,7 @@
     font-size:20px;
     font-weight:bold;
     margin-bottom:50px;
+}
+a > #btn_logo{
+    background-color:#EBC03B;
 }
