@@ -139,7 +139,7 @@ function sendBoardViewDataHandler(response, state)
                         </script>
 
                         <div class="mb-style1 board-view">
-                            <form name="quest_form_board_view" id="quest_form_board_view" method="post">
+                            <form name="quest_form_board_view" id="quest_form_board_view" method="post">{% csrf_token %}
                                 <input type="hidden" name="mb_nonce_value"
                                        value="d3b3d30d09a2f05703ce959dca00326f"><input type="hidden"
                                                                                        name="mb_nonce_time"

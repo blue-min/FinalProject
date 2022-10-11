@@ -1,5 +1,5 @@
 from django.shortcuts import render
-#import fileUpload.photo2cartoon.makeLogo as ml
+import fileUpload.photo2cartoon.makeLogo as ml
 from django.core.files.storage import FileSystemStorage
 import threading
 import time
@@ -63,7 +63,7 @@ def logoMaking(uploaded_file_url, filename):
 
     global check
     global img_url
-    #img_url = ml.makeLogo(uploaded_file_url, filename)
+    img_url = ml.makeLogo(uploaded_file_url, filename)
     check = True
 
 def loading(request):
@@ -107,5 +107,5 @@ def color(request):
 
 def imgtool(request):
 
-    return render(request, 'archone/imgtool.html',{'img_url' : img_url})
+    return render(request, 'archone/imgtool.html',{'color1': color[0], 'color2': color[1], 'color3': color[2], 'img_url': img_url, 'choice' : choice})
 

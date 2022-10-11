@@ -88,7 +88,7 @@
                  <h2 id="h2_title" style="font-weight:bold; color:#372d2b;" >문의 게시판</h2>
                  </div>
                 <div id="search_container" style="margin-bottom:30px;">
-                  <form action="#" method="get" >
+                  <form action="#" method="get" >{% csrf_token %}
                             <div class="input-group" id="input-group">
                                 <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
                                 <input class="form-control" id="system-search" name="q" placeholder="Search for"
