@@ -1,8 +1,8 @@
 /**{margin:0; padding:0;}*/
-#container_2{
+/*#container_2{
     display:flex;
     justify-content: center;
-}
+}*/
 
 #img_container{
     display:inline-block;
@@ -74,10 +74,11 @@
    color:black;
    background-color:#EBC03B;
    position:absolute;
-   left:256px;
+  /* left:1500x;*/
+/*  right: 432px;*/
    width:150px;
    border-radius:10px;
-   margin:10px;
+   margin-bottom:10px;
    font-family: 'NanumGothic', sans-serif;"
 }
 
@@ -86,3 +87,6 @@
     color:white;
 }
 
+#chooseFile{
+     margin-bottom:10px;
+}

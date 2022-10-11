@@ -260,7 +260,7 @@
                 <!-- 시도해봅시다1 -->
 
 
-                <div class="space-medium">
+                <div class="space-medium" >
                     <p style="text-align:center; font-size:180%; font-weight:bold;">페이셜 로고 제작하기</p>
                     <h2 style="text-align:center; width: auto; font-size:120%;">사진을 업로드해 로고를 제작해보세요.</h2>
                     <br>
@@ -268,17 +268,25 @@
                     <div class="container">
                         <div id="container_2">
                             <div class="row">
-                                <div class="col-lg-12 col-md-12">
+                              <!--  <div class="col-lg-12 col-md-12"  style="display:flex; justify-content:center;">-->
+                                <div class="col-lg-12 col-md-12"  style="display:flex; justify-content:center;">
                                     <form method="post" enctype="multipart/form-data" action="{%url 'color'%}">
                                         {% csrf_token %}
-                                        <div id="img_container">
-                                        <div><img src="../static/images/white.jpg" id="img_section" style="width: 50%; height: auto;"></div>
+                                        <div id="img_container" >
+                                        <div style="width: 10%; height: 10%;"><img src="../static/images/white.jpg" id="img_section" ></div>
+                                            </div>
                                         <br><br><br><br>
-                                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" required=true value="업로드" style="margin-left: 250px;" onchange="loadFile(this)">
+                                        <div id="btn_container" style="display:flex; flex-direction:column; justify-content: center;">
+                                            <div id="upload" style="display:flex; justify-content:center;">
+                                                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" required=true value="업로드"  onchange="loadFile(this)" style="display:inline-block;">
+                                            </div>
+                                            <div id="making" style="display:flex; justify-content:center;">
+                                        <input type="submit" id="input_btn" value="로고 제작" style="display:inline-block; margin-right:145px;"> <!-- style="margin-left: 250px;"-->
+                                            </div>
                                         </div>
                                         <br>
                                        <!-- padding-left:35px; padding-right:40px;-->
-                                        <input type="submit" id="input_btn" value="로고 제작">
+
     <!--                                <a href="#" class="btn" style="background-color: #EBC03B; border-radius: 10px; position: absolute; left: 46.5%; top: 97% width: 10%; height: 10%;" ><div id="go_making_btn" style="color:#464241;">제작하기</div></a>-->
                                     </form>
                                 </div>
