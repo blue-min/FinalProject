@@ -104,7 +104,9 @@
 }
 
 .tool_color{
-    padding:30px;
+    padding-left:30px;
+    padding-right:30px;
+
 }
 
 .tool_container{

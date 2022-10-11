@@ -100,22 +100,22 @@
                 </canvas>
                 <div class="tool_color" style="display:inline-block;">
                     <h1 id="h1_title">로고 꾸미기</h1>
-                    <label style="visibility:hidden">Use WebGl<input type="checkbox" id="webgl"
+                    <label style="font-size:1px; visibility:hidden " >Use WebGl<input type="checkbox" id="webgl"
                                                                      checked=""></label>
-                    <div id="bench" style="visibility:hidden">720 x 1080px 1ms</div>
+                    <div id="bench" style="font-size:1px; visibility:hidden">720 x 1080px 1ms</div>
                     <!-- <div class="form-group col-md-12">-->
 
 
                     <!-- 이거 삭제하면 색 변경 안됨 start -->
-                    <p style="visibility:hidden">
-                        <label><span>Grayscale:</span> <input type="checkbox"
+                    <p style=" visibility:hidden;">
+                        <label><span  style="font-size:1px;">Grayscale:</span> <input type="checkbox"
                                                               id="grayscale"></label><br>
-                        <label><span>Avg.</span> <input type="radio" id="average" name="grayscale"></label>
-                        <label><span>Lum.</span> <input type="radio" id="lightness"
+                        <label><span  style="font-size:1px;">Avg.</span> <input type="radio" id="average" name="grayscale"></label>
+                        <label><span  style="font-size:1px;">Lum.</span> <input type="radio" id="lightness"
                                                         name="grayscale"></label>
-                        <label><span>Light.</span> <input type="radio" id="luminosity"
+                        <label><span  style="font-size:1px;">Light.</span> <input type="radio" id="luminosity"
                                                           name="grayscale"></label>
-                        <label>Mode:</label>
+                        <label  style="font-size:1px;">Mode:</label>
                         <select id="blend-mode" name="blend-mode">
 
                             <option value="tint">Tint</option>
@@ -131,6 +131,17 @@
                                              value="#00f900"></label><br>
                         <label>Alpha: <input type="range" id="blend-alpha" min="0" max="1" value="1"
                                              step="0.01"></label><br>
+                          <div id="result">
+                    <div id="result_word">
+                <p id="select_word" style="margin-bottom:0; font-size:12px; font-weight:bold;">ㅤ선택한 단어 : {{choice}}</p>
+                <p id="suggest_color"  style="font-size:12px;  font-weight:bold;">ㅤ당신에게 추천하는 색</p>
+</div>
+                    <div id="color_container" style="display:flex; justify-content:left; margin:10px;">
+                        <div id="color_1" style="background-color:{{color1}};"></div>
+                        <div id="color_2" style="background-color:{{color2}};"></div>
+                        <div id="color_3" style="background-color:{{color3}};"></div>
+                    </div>
+                </div>
                         <!-- 텍스트 입력 : <input id="draw_text" value="Hello World."> -->
                         <button class="btn main-btn pull-right" id="draw_text" style="margin:2px;">텍스트 추가</button>
                        <!-- <button id="draw_text" style="background-color:black; color:white;">텍스트 추가</button>-->
