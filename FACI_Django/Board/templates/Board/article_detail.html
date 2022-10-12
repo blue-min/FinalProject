@@ -203,9 +203,9 @@ function sendBoardViewDataHandler(response, state)
                                     <div class="btn-box-right" id="quest_btn_box">
                                         <div class="btn-box-left" style="float:left;"></div>
                                        <div>
-        <a href="{% url 'update' object.id %}"> <button class="btn main-btn pull-right" id="btn_revise">수정</button></a>
-        <a href="{% url 'delete' object.id %}"><button class="btn main-btn pull-right" id="btn_delete">삭제</button></a>
-        <a href="{% url 'index' %}"><button class="btn main-btn pull-right" id="btn_index">목록</button></a>
+                                            <a href="{% url 'update' object.id %}">수정</a>
+                                            <a href="{% url 'delete' object.id %}">삭제</a>
+                                            <a href="{% url 'index' %}">목록</a>
     </div>
                                     </div>
                                 </div>
